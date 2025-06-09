@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Signup Form without JavaScript" />
+  <title>Signup Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <form action="#" method="POST">
+      <h2>Signup</h2>
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" 
+        required 
+        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}" 
+        title="Min 8 chars, include upper/lower, number & special char" 
+      />
+
+      <label for="confirm">Confirm Password</label>
+      <input type="password" id="confirm" name="confirm" required />
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required />
+
+      <div class="radio-group">
+        <label><input type="radio" name="role" value="student" required /> Student</label>
+        <label><input type="radio" name="role" value="employee" required /> Employee</label>
+      </div>
+
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="terms" required /> I agree to all the Terms and conditions</label>
+      </div>
+
+      <button type="submit">Signup</button>
+    </form>
+  </main>
+</body>
+</html>
