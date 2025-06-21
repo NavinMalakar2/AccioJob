@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive UI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+     footer {
+      margin-top: 50px;
+    }
+    .footer-links a {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+ .flex-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 30px auto;
+      max-width: 1000px;
+    }
+    .flex-section .item {
+      text-align: center;
+      width: 300px;
+    }
+    .flex-section img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    @media (max-width: 768px) {
+      .flex-section {
+        justify-content: space-evenly;
+      }
+    }
+    @media (max-width: 576px) {
+      .flex-section {
+        justify-content: center;
+      }
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(4, 200px);
+      gap: 10px;
+      max-width: 1000px;
+      margin: 0 auto 50px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .img1 { grid-column: span 2; grid-row: span 2; }
+    .img2 { grid-column: span 1; grid-row: span 1; }
+    .img3 { grid-column: span 1; grid-row: span 1; }
+    .img4 { grid-column: span 2; grid-row: span 1; }
+    .img5 { grid-column: span 1; grid-row: span 1; }
+    .img6 { grid-column: span 1; grid-row: span 1; }
+    .img7 { grid-column: span 2; grid-row: span 1; }
+    .img8 { grid-column: span 2; grid-row: span 2; }
+    .img9 { grid-column: span 4; grid-row: span 2; }
+
+     .navbar-container {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Complex UI</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Section 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Section 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Section 3</a></li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://media.istockphoto.com/id/509473894/photo/iphone-6s-space-gray-unboxing.jpg?s=612x612&w=0&k=20&c=y5NG1mUFBHYW9E3C04P_BQevL_1WZFKelZCeCW9Zb60=" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First Slide</h5>
+          <p>First slide description</p>
+          <a href="#" class="btn btn-primary">Call to Action</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://media.istockphoto.com/id/509473894/photo/iphone-6s-space-gray-unboxing.jpg?s=612x612&w=0&k=20&c=y5NG1mUFBHYW9E3C04P_BQevL_1WZFKelZCeCW9Zb60=" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second Slide</h5>
+          <p>Secand slide description</p>
+          <a href="#" class="btn btn-primary">Call to Action</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://media.istockphoto.com/id/509473894/photo/iphone-6s-space-gray-unboxing.jpg?s=612x612&w=0&k=20&c=y5NG1mUFBHYW9E3C04P_BQevL_1WZFKelZCeCW9Zb60=" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third Slide</h5>
+          <p>Third slide description</p>
+          <a href="#" class="btn btn-primary">Call to Action</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+ <!-- Flex Section -->
+  <div class="flex-section">
+    <div class="item">
+      <img src="https://via.placeholder.com/300x200" alt="" />
+      <p>Short description</p>
+    </div>
+    <div class="item">
+      <img src="https://via.placeholder.com/300x200" alt="" />
+      <p>Short description</p>
+    </div>
+    <div class="item">
+      <img src="https://via.placeholder.com/300x200" alt="" />
+      <p>Short description</p>
+    </div>
+  </div>
+
+  <!-- Photo Gallery using CSS Grid -->
+  <div class="gallery">
+    <img src="https://via.placeholder.com/300x200" alt="" class="img1" />
+    <img src="https://via.placeholder.com/300x200" alt="" class="img2" />
+    <img src="https://via.placeholder.com/300x200" alt="" class="img3" />
+    <img src="https://via.placeholder.com/300x200" alt="" class="img4" />
+    <img src="https://via.placeholder.com/300x200" alt="" class="img5" />
+    <img src="https://via.placeholder.com/300x200" alt="" class="img6" />
+    <img src="https://via.placeholder.com/300x200" alt="" class="img7" />
+    <img src="https://via.placeholder.com/300x200" alt="" class="img8" />
+    <img src="https://via.placeholder.com/300x200" alt="" class="img9" />
+       
+  </div>
+
+  <!-- Cards Section -->
+  <div class="container my-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="https://media.istockphoto.com/id/509473894/photo/iphone-6s-space-gray-unboxing.jpg?s=612x612&w=0&k=20&c=y5NG1mUFBHYW9E3C04P_BQevL_1WZFKelZCeCW9Zb60=" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">Card description</p>
+            <a href="#" class="btn btn-primary">Call to Action</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="https://media.istockphoto.com/id/509473894/photo/iphone-6s-space-gray-unboxing.jpg?s=612x612&w=0&k=20&c=y5NG1mUFBHYW9E3C04P_BQevL_1WZFKelZCeCW9Zb60=" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">Card description</p>
+            <a href="#" class="btn btn-primary">Call to Action</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="https://media.istockphoto.com/id/509473894/photo/iphone-6s-space-gray-unboxing.jpg?s=612x612&w=0&k=20&c=y5NG1mUFBHYW9E3C04P_BQevL_1WZFKelZCeCW9Zb60=" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">Card description</p>
+            <a href="#" class="btn btn-primary">Call to Action</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-light text-dark py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-links">
+          <h6>Useful Links</h6>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <div class="col-md-4 footer-links">
+          <h6>More Links</h6>
+          <a href="#">Link 4</a>
+          <a href="#">Link 5</a>
+          <a href="#">Link 6</a>
+        </div>
+        <div class="col-md-4">
+          <h6>Contact Us</h6>
+          <p>Email: example@example.com</p>
+          <p>Phone: +1 (555) 123-4567</p>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between align-items-center mt-3 ">
+        <p>&copy; 2023 Complex UI. All Rights Reserved.</p>
+        <a href="#" class="btn btn-primary">Back to Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
