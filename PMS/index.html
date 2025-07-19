@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Employee Manager</title>
+  
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <h2>New Employee</h2>
+
+  <form id="employeeForm" onsubmit="event.preventDefault(); addEmployee();">
+    <div class="input-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter name" />
+    </div>
+    <div class="input-group">
+      <label for="profession">Profession</label>
+      <input type="text" id="profession" placeholder="Enter profession" />
+    </div>
+    <div class="input-group">
+      <label for="age">Age</label>
+      <input type="number" id="age" placeholder="Enter age" />
+    </div>
+  </form>
+
+  <button id="submitBtn" onclick="addEmployee()">Add Employee</button>
+
+  <div class="message" id="message"></div>
+
+  <h3>Added Employees (<span id="empCount">0</span>)</h3>
+  <div id="employeeList"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

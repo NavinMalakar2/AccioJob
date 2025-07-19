@@ -1,0 +1,112 @@
+* {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    h2, h3 {
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 200px;
+      min-width: 200px;
+    }
+
+    label {
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    input {
+      padding: 10px;
+      border: 1px solid white;
+      background-color: black;
+      color: white;
+      border-radius: 4px;
+      font-size: 16px;
+      outline: none;
+    }
+
+    input:focus {
+      border: 2px solid #00ff88;
+    }
+
+    #submitBtn {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      display: block;
+      margin: 20px auto 0 auto;
+    }
+
+    .message {
+      margin-top: 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .success {
+      color: #00ff88;
+    }
+
+    .error {
+      color: #ff4444;
+    }
+
+    #employeeList {
+      margin-top: 20px;
+    }
+
+    .employee-card {
+      background-color: #222;
+      padding: 10px;
+      margin: 8px auto;
+      border-radius: 5px;
+      max-width: 500px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .employee-card button {
+      background-color: #e74c3c;
+      border: none;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      form {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      #submitBtn {
+        width: 100%;
+      }
+    }
