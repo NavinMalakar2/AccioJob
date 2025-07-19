@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Table</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1 style="background-color: black ; color: white; width: 100%;">Student Table</h1>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" id="search" placeholder="Search by name or email" />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <!-- Sorting Buttons -->
+    <div class="button-container">
+      <button onclick="sortAZ()">Sort A → Z</button>
+      <button onclick="sortZA()">Sort Z → A</button>
+      <button onclick="sortByMarks()">Sort by Marks</button>
+      <button onclick="sortByPassing()">Sort by Passing</button>
+      <button onclick="sortByClass()">Sort by Class</button>
+      <button onclick="sortByGender()">Sort by Gender</button>
+    </div>
+
+    <!-- Table for Student Data -->
+    <div id="tables">
+      <table id="studentTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Class</th>
+            <th>Marks</th>
+            <th>Passing</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data will be inserted here dynamically -->
+        </tbody>
+      </table>
+
+      <!-- Gender-based Table Container -->
+      <div id="genderTables"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

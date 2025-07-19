@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "first_name": "Navin",
+    "last_name": "Malakar",
+    "gender": "Male",
+    "class": 10,
+    "marks": 88,
+    "passing": true,
+    "email": "navin@example.com"
+    
+  },
+  {
+    "id": 2,
+    "first_name": "Aisha",
+    "last_name": "Khan",
+    "gender": "Female",
+    "class": 9,
+    "marks": 74,
+    "passing": true,
+    "email": "aisha.khan@example.com"
+    
+  },
+  {
+    "id": 3,
+    "first_name": "Ravi",
+    "last_name": "Verma",
+    "gender": "Male",
+    "class": 10,
+    "marks": 59,
+    "passing": false,
+    "email": "ravi.verma@example.com"
+  
+  },
+  {
+    "id": 4,
+    "first_name": "Sneha",
+    "last_name": "Sharma",
+    "gender": "Female",
+    "class": 8,
+    "marks": 92,
+    "passing": true,
+    "email": "sneha.sharma@example.com"
+    
+  },
+  {
+    "id": 5,
+    "first_name": "Rahul",
+    "last_name": "Jain",
+    "gender": "Male",
+    "class": 9,
+    "marks": 67,
+    "passing": true,
+    "email": "rahul.jain@example.com"
+    
+  },
+  {
+    "id": 6,
+    "first_name": "Pooja",
+    "last_name": "Singh",
+    "gender": "Female",
+    "class": 10,
+    "marks": 82,
+    "passing": true,
+    "email": "pooja.singh@example.com"
+  },
+  {
+    "id": 7,
+    "first_name": "Aman",
+    "last_name": "Thakur",
+    "gender": "Male",
+    "class": 8,
+    "marks": 40,
+    "passing": false,
+    "email": "aman.thakur@example.com"
+  },
+  {
+    "id": 8,
+    "first_name": "Divya",
+    "last_name": "Patel",
+    "gender": "Female",
+    "class": 9,
+    "marks": 77,
+    "passing": true,
+    "email": "divya.patel@example.com"
+  },
+  {
+    "id": 9,
+    "first_name": "Mohit",
+    "last_name": "Raj",
+    "gender": "Male",
+    "class": 10,
+    "marks": 61,
+    "passing": false,
+    "email": "mohit.raj@example.com"
+  },
+  {
+    "id": 10,
+    "first_name": "Neha",
+    "last_name": "Mishra",
+    "gender": "Female",
+    "class": 8,
+    "marks": 95,
+    "passing": true,
+    "email": "neha.mishra@example.com"
+  }
+]
