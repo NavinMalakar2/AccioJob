@@ -1,0 +1,124 @@
+:root{
+--bg:#0b1020; --card:#121936; --muted:#9aa5b1;
+ --txt:#e7ecf3; --accent:#4f8cff; --good:#12b886; --bad:#f03e3e;
+}
+*{box-sizing:border-box}
+body{
+    margin:0;
+    font-family:system-ui,Arial,sans-serif;
+    background:linear-gradient(180deg,#0b1020,#0b1020 60%,#0c1430);
+    color:var(--txt)
+}
+.container{
+    max-width:1100px;
+    margin:40px auto;
+    padding:0 16px
+}
+header{
+    display:flex;
+    gap:16px;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:16px
+}
+h1{
+    font-size:1.4rem;
+    margin:0;
+    letter-spacing:.3px
+}
+.card{
+    background:var(--card);
+    border:1px solid #1e274a;
+    border-radius:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,.3)
+}
+.controls{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    padding:12px
+}
+.controls > *{
+    border-radius:12px;
+    border:1px solid #263158;
+    background:#0f1733;
+    color:var(--txt)
+}
+input[type="text"]{
+    padding:10px 12px;
+    min-width:240px;
+    outline:none
+}
+button{
+    padding:10px 12px;
+    cursor:pointer
+}
+button.primary{
+    background:var(--accent);
+    border-color:#326bdf
+}
+button.ghost{
+    background:transparent
+}
+button:disabled{
+    opacity:.6;
+    cursor:not-allowed
+}
+.table-wrap{
+    overflow:auto;
+    border-top:1px solid #24305a
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:880px
+}
+thead th{
+    position:sticky;
+    top:0;
+    background:#0f1733;
+    color:#9fb5ff;
+    text-align:left;
+    font-weight:600;
+    border-bottom:1px solid #24305a;
+    padding:12px
+}
+tbody td{
+    padding:12px;
+    border-bottom:1px solid #1b254a;
+    color:#dfe7ff
+}
+tbody tr:hover{
+    background:#0f1733
+}
+.row{
+    display:flex;
+    align-items:center;
+    gap:10px
+}
+img.coin{
+    width:24px;
+    height:24px;
+    border-radius:50%
+}
+.muted{
+    color:var(--muted)
+}
+.chip{
+    padding:.15rem .5rem;
+    border-radius:999px;
+    border:1px solid #2b365e;
+    color:#b9c4ff;
+    font-size:.75rem
+}
+.num{
+    text-align:right
+}
+.pos{
+    color:var(--good);
+    font-weight:600
+}
+.neg{
+    color:var(--bad);
+    font-weight:600
+}

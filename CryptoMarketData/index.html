@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coin Tracker – Crypto Market Data</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="row">
+        <h1>Coin Tracker</h1>
+        
+      </div>
+      <div id="status" class="muted">Idle</div>
+    </header>
+
+    <div class="card">
+      <div class="controls">
+        <input id="searchInput" type="text" placeholder="Search by name or symbol… (e.g., bitcoin, eth)" />
+        <button id="searchBtn" title="Filter by search term">Search</button>
+        <button id="resetBtn" class="ghost" title="Clear search and reset">Reset</button>
+        
+        <button id="sortMktBtn" class="ghost" title="Toggle sort by Market Cap">Sort: Market Cap ↓</button>
+        <button id="sortPctBtn" class="ghost" title="Toggle sort by 24h % change">Sort: 24h % ↓</button>
+       
+        <button id="loadThenBtn" class="ghost" title="Load using .then()">Load (.then)</button>
+        <button id="loadAsyncBtn" class="primary" title="Load using async/await">Load (async/await)</button>
+      </div>
+
+      <div class="table-wrap">
+        <table id="coinTable" aria-describedby="tableDesc">
+          <caption id="tableDesc" class="sr">Cryptocurrency market data table</caption>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>ID</th>
+              <th>Symbol</th>
+              <th class="num">Current Price (USD)</th>
+              <th class="num">24h Change %</th>
+              <th class="num">Market Cap (USD)</th>
+              <th class="num">Total Volume</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+            <tr><td colspan="8" class="muted" style="padding:18px">Click <strong>Load</strong> to fetch data…</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+     
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
