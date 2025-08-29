@@ -1,0 +1,24 @@
+
+    :root { font-family: system-ui, Arial, sans-serif; }
+    body { margin: 24px; }
+    h1 { margin-bottom: 12px; }
+    .controls { display: flex; gap: 12px; align-items: center; margin-bottom: 16px; }
+    button {
+      padding: 10px 16px; border: 0; border-radius: 8px; cursor: pointer;
+      background: #2563eb; color: white; font-weight: 600;
+    }
+    button[disabled] { opacity: 0.6; cursor: not-allowed; }
+    #status { font-size: 14px; color: #334155; }
+    #error { color: #b91c1c; font-weight: 600; margin-top: 8px; display:none; }
+    .tables { display: grid; gap: 20px; }
+    .card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+    .card h2 { margin: 0 0 10px; font-size: 18px; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { border-top: 1px solid #e5e7eb; padding: 8px; text-align: left; vertical-align: top; }
+    th { background: #f8fafc; }
+    .spinner {
+      display: inline-block; width: 16px; height: 16px; border: 2px solid #93c5fd; border-top-color: #1d4ed8;
+      border-radius: 50%; animation: spin 0.8s linear infinite; margin-right: 8px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .muted { color: #64748b; font-size: 12px; }
