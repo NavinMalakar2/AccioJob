@@ -1,0 +1,90 @@
+/* Basic reset */
+* { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+
+/* Body styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: #f0f2f5;
+  padding: 20px 0;
+}
+
+/* Container */
+.container {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h2, h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input {
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Buttons */
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  margin-top: 5px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Logout button */
+#logoutBtn {
+  width: 100%;
+  margin-top: 15px;
+  background: #dc3545;
+}
+
+#logoutBtn:hover {
+  background: #a71d2a;
+}
+
+/* Message display */
+#message {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 450px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+}

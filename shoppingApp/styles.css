@@ -1,0 +1,147 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f172a;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #38bdf8;
+}
+
+.hamburger {
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: white;
+  color: #0ea5e9;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #e0f2fe;
+}
+
+/* Featured Section */
+.featured {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.featured h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.product img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #1e293b;
+    flex-direction: column;
+    width: 200px;
+    display: none;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+}

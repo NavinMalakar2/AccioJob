@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h2 class="logo">MyShop</h2>
+    <input type="text" id="searchInput" placeholder="Search products...">
+    <div class="nav-links">
+      <a href="../Cart/index.html">Cart (<span id="cartCount">0</span>)</a>
+      <a href="../Profile/index.html">Profile</a>
+      <a href="../index.html">Home</a>
+    </div>
+  </nav>
+
+  <!-- Filters -->
+  <aside class="filters">
+    <h3>Filters</h3>
+
+    <div class="filter-group">
+      <label for="category">Category</label>
+      <select id="category">
+        <option value="">All</option>
+        <option value="men's clothing">Men's Clothing</option>
+        <option value="women's clothing">Women's Clothing</option>
+        <option value="jewelery">Jewelry</option>
+        <option value="electronics">Electronics</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="priceRange">Max Price: <span id="priceValue">1000</span>$</label>
+      <input type="range" id="priceRange" min="0" max="1000" step="10" value="1000">
+    </div>
+    <div class="filter-group">
+  <label for="rating">Minimum Rating</label>
+  <select id="rating">
+    <option value="0">All</option>
+    <option value="1">1 & up</option>
+    <option value="2">2 & up</option>
+    <option value="3">3 & up</option>
+    <option value="4">4 & up</option>
+    <option value="5">5</option>
+  </select>
+</div>
+<!-- Color -->
+    <div class="filter-group">
+      <label for="color">Color</label>
+      <select id="color">
+        <option value="">All</option>
+        <option value="Red">Red</option>
+        <option value="Blue">Blue</option>
+        <option value="Green">Green</option>
+        <option value="Black">Black</option>
+        <option value="White">White</option>
+      </select>
+    </div>
+
+    <!-- Size -->
+    <div class="filter-group">
+      <label for="size">Size</label>
+      <select id="size">
+        <option value="">All</option>
+        <option value="S">Small</option>
+        <option value="M">Medium</option>
+        <option value="L">Large</option>
+        <option value="XL">Extra Large</option>
+      </select>
+    </div>
+
+  </aside>
+
+  <!-- Products -->
+  <main class="products-container" id="productsContainer">
+    <!-- Products dynamically inserted here -->
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
