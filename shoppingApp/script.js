@@ -18,7 +18,7 @@ async function loadFeatured() {
         <img src="${p.image}" alt="${p.title}">
         <h3>${p.title.slice(0,20)}...</h3>
         <p>₹${p.price}</p>
-        <a href="shop/index.html" class="btn">View</a>
+        <a href="Shop/index.html" class="btn">View</a>
       </div>
     `).join("");
   } catch (error) {
